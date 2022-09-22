@@ -16,9 +16,15 @@
 
 </head>
 
-<body class="text-center">
+
+<body >
+
 <div class="w-100 m-auto text-center">
-    <main class="form-signin w-100 m-auto text-center shadow-lg p-3">
+    <header>
+ 
+        <%- include('../views/header2.ejs'); %>
+    </header>
+    <main class="form-signin w-100 text-center shadow-lg p-3  m-auto ">
         <form id="formLogin" action="/login" method="POST">
             <img class="mb-4" src="img/logo.png" alt="" width="90" height="90">
             <h1 class="h3 mb-3 fw-normal">Iniciar Sesión</h1>
@@ -43,9 +49,10 @@
 
 
     </main>
-    <footer class=" text-black-50 text-center mt-5" th:fragment="footer">
-        <p>Developed by <a href="https://github.com/grifhus">David Julian Jaramillo</a>. &copy; 2022 </p>
-    </footer>
+    <footer class=" text-black-50 text-center mt-5">
+        <%- include('../views/footer.ejs'); %>
+      </footer>
+
 </div>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 

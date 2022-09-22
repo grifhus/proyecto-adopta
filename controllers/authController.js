@@ -34,6 +34,38 @@ exports.register = async (req, res) => {
     console.log(error)
   }
 }
+//metodo para contacto
+exports.contact = async (req, res) => {
+  try {
+    const nombre = req.body.nombre
+    const email = req.body.email
+    const telefono = req.body.telefono
+    const mensaje = req.body.mensaje
+    console.log(nombre + "-" + email + "-" + telefono+ "-"+ mensaje)
+    //al utilizar query ya podemos realizar sentencias sql con node
+    conexion.query(
+      "INSERT INTO contact SET ?",
+      {
+        nombre: nombre,
+        email: email,
+        telefono: telefono,
+        mensaje:mensaje,
+      },
+      (error, result) => {
+        if (error) {
+          console.log(error)
+        }
+        res.redirect("/")
+      }
+    )
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+
+
+
 // Metodo para login
 exports.login = async (req, res) => {
   try {
