@@ -63,9 +63,6 @@ exports.contact = async (req, res) => {
   }
 }
 
-
-
-
 // Metodo para login
 exports.login = async (req, res) => {
   try {
