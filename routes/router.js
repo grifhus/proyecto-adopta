@@ -9,8 +9,8 @@ const authController = require("../controllers/authController")
 router.get("/", authController.isAuthenticated, (req, res) => {
   res.render("index",{user:req.user})
 })
-router.get("/sitios", authController.isAuthenticated, (req, res) => {
-  res.render("sitios",{user:req.user})
+router.get("/adopta", authController.isAuthenticated, (req, res) => {
+  res.render("adopta",{user:req.user})
 })
 router.get("/contact",authController.isAuthenticated, (req, res) => {
   res.render("contact",{user:req.user})
@@ -26,7 +26,7 @@ router.post("/register", authController.register)
 router.post("/contact", authController.contact)
 router.post("/login", authController.login)
 router.post("/index", authController.login)
-router.post("/sitios", authController.login)
+router.post("/adopta", authController.login)
 router.get("/logout", authController.logout)
 
 module.exports = router
