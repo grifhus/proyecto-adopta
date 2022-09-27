@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Adopta Colombia</title>
+    <link href="css/aos.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+
 
 
 
@@ -18,11 +20,11 @@
     <div class="w-100 text-center">
         <header>
 
-            <%- include('../views/header.ejs'); %>
+            <%- include('../views/layout/header.ejs'); %>
         </header>
 
         <main>
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="myCarousel" class="carousel slide container-fluid" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -36,16 +38,19 @@
                         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="/http://www.w3.org/2000/svg"
                             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <rect width="100%" height="100%" fill="#777" />
-                            <image  class="img-fluid imagen1" href="/img/5.jpg" width="100%"  />
+                            <image class="img-fluid imagen1" href="/img/5.jpg" width="100%" />
 
                         </svg>
-                        
 
-                        <div class="container">
+
+                        <div class="container ">
                             <div class="carousel-caption text-start">
                                 <h1>Adopta.</h1>
-                                <p>Adoptar una mascota que ha sido víctima de maltrato o abandono es un acto de amor y la oportunidad perfecta para enseñarle a sus hijos los valores de la responsabilidad, el cuidado, la compasión y el significado del amor incondicional y verdadero que esta mascota les puede brindar creando vínculos muy fuertes.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Formulario</a></p>
+                                <p>Adoptar una mascota que ha sido víctima de maltrato o abandono es un acto de amor y
+                                    la oportunidad perfecta para enseñarle a sus hijos los valores de la
+                                    responsabilidad, el cuidado, la compasión y el significado del amor incondicional y
+                                    verdadero que esta mascota les puede brindar creando vínculos muy fuertes.</p>
+                                <p><a class="btn btn-lg btn-primary" href="contact">Formulario</a></p>
                             </div>
                         </div>
                     </div>
@@ -53,15 +58,17 @@
                         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <rect width="100%" height="100%" fill="#777" />
-                            <image  class="img-fluid imagen2" href="/img/2.jpg"  width="100%" />
+                            <image class="img-fluid imagen1" href="/img/2.jpg" width="100%" />
 
                         </svg>
 
                         <div class="container">
                             <div class="carousel-caption">
                                 <h1>Donación única.</h1>
-                                <p>Tu apoyo es muy importante para seguir brindando segundas oportunidades. Si tienes preguntas o quieres información adicional, puedes escribirnos a nuestra línea de whatsapp (57) XXXXXXXXX.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Donar</a></p>
+                                <p>Tu apoyo es muy importante para seguir brindando segundas oportunidades. Si tienes
+                                    preguntas o quieres información adicional, puedes escribirnos a nuestra línea de
+                                    whatsapp (57) XXXXXXXXX.</p>
+                                <p><a class="btn btn-lg btn-primary" href="contact">Donar</a></p>
                             </div>
                         </div>
                     </div>
@@ -69,18 +76,20 @@
                         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <rect width="100%" height="100%" fill="#777" />
-                            <image  class="img-fluid imagen2" href="/img/3.jpg"  width="100%" />
+                            <image class="img-fluid imagen1" href="/img/3.jpg" width="100%" />
                         </svg>
 
                         <div class="container">
                             <div class="carousel-caption text-end">
                                 <h1>Plan Apadrina y Deja Huella.</h1>
-                                <p>Apadrinar consiste en crear un vinculo con alguno de nuestros animales rescatados y sentir que eres parte de su vida.
+                                <p>Apadrinar consiste en crear un vinculo con alguno de nuestros animales rescatados y
+                                    sentir que eres parte de su vida.
 
                                     ​
-                                    
-                                    Ayudarás a cubrir parte de su manutencion con una cuota mensual y recibiras en tu correo electronico un informe detallado de lo que hacemos en la fundacion. </p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Apadrinar</a></p>
+
+                                    Ayudarás a cubrir parte de su manutencion con una cuota mensual y recibiras en tu
+                                    correo electronico un informe detallado de lo que hacemos en la fundacion. </p>
+                                <p><a class="btn btn-lg btn-primary" href="adopta">Apadrinar</a></p>
                             </div>
                         </div>
                     </div>
@@ -103,35 +112,41 @@
             <div class="container marketing">
 
 
-                
+
                 <!-- START THE FEATURETTES -->
 
- 
 
-                <div class="row featurette">
-                    <div class="col-md-7">
+
+                <div class="row featurette" data-aos="fade-right" >
+                    <div class="col-md-7" >
                         <h2 class="featurette-heading fw-normal lh-1  text-primary">Misión </h2>
-                        <p class="lead">La fundación Adóptame, es una entidad sin ánimo de lucro, comprometida con promover mediante diferentes actividades la adopción responsable, la conciencia de esterilizar y recuperar animales en condición de maltrato y abandono con el fin de enseñar, contribuir y entregar una calidad de vida a todos los perros y gatos que lo necesiten.</p>
+                        <p class="lead">La fundación Adóptame, es una entidad sin ánimo de lucro, comprometida con
+                            promover mediante diferentes actividades la adopción responsable, la conciencia de
+                            esterilizar y recuperar animales en condición de maltrato y abandono con el fin de enseñar,
+                            contribuir y entregar una calidad de vida a todos los perros y gatos que lo necesiten.</p>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5" >
                         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                             width="500" height="350" xmlns="http://www.w3.org/2000/svg" role="img"
                             aria-label="Placeholder: 500x350" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <title>Misión</title>
                             <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
                                 dy=".3em">500x500</text>
-                                <image  class="img-fluid " href="/img/6.jpg"  width="500px" height="350px" />
+                            <image class="img-fluid " href="/img/6.jpg" width="500px" height="350px" />
                         </svg>
 
                     </div>
                 </div>
 
-                <hr class="featurette-divider">
+                <hr class="featurette-divider" >
 
-                <div class="row featurette">
+                <div class="row featurette" data-aos="fade-left">
                     <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading fw-normal lh-1 text-primary" >Visión</h2>
-                        <p class="lead">Queremos ser reconocidos a nivel regional por el impacto generado no solo a todos aquellos animales que fueron rescatados, sino a toda la sociedad por generar conocimiento y consciencia acerca de la importancia de esterilizar, y de la responsabilidad de tener un perro y/o gato en nuestro hogar.</p>
+                        <h2 class="featurette-heading fw-normal lh-1 text-primary">Visión</h2>
+                        <p class="lead">Queremos ser reconocidos a nivel regional por el impacto generado no solo a
+                            todos aquellos animales que fueron rescatados, sino a toda la sociedad por generar
+                            conocimiento y consciencia acerca de la importancia de esterilizar, y de la responsabilidad
+                            de tener un perro y/o gato en nuestro hogar.</p>
                     </div>
                     <div class="col-md-5 order-md-1">
                         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
@@ -140,7 +155,7 @@
                             <title>Visión</title>
                             <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
                                 dy=".3em">500x500</text>
-                                <image  class="img-fluid " href="/img/vision.jpg"  width="500px" height="350px" />
+                            <image class="img-fluid " href="/img/vision.jpg" width="500px" height="350px" />
 
                         </svg>
 
@@ -149,15 +164,17 @@
 
                 <hr class="featurette-divider">
 
-                <div class="row featurette">
+                <div class="row featurette" data-aos="zoom-in">
                     <div class="col-md-7">
-                        <h2 class="featurette-heading fw-normal lh-1 text-primary ">Cifras<span
-                                class="text-muted"> al final de 2021:</span></h2>
-                        <p class="lead">Más de 1054 perros y gatos rescatados, recuperados, rehabilitados y entregados en adopción responsable.
+                        <h2 class="featurette-heading fw-normal lh-1 text-primary ">Cifras<span class="text-muted"> al
+                                final de 2021:</span></h2>
+                        <p class="lead">Más de 1054 perros y gatos rescatados, recuperados, rehabilitados y entregados
+                            en adopción responsable.
 
                             Más de 15.069 animalitos esterilizados, atendidos y ayudados.
-                            
-                            Más de 600 campañas educativas sobre tenencia responsable y sensibilización con comunidades, empresas y colegios.</p>
+
+                            Más de 600 campañas educativas sobre tenencia responsable y sensibilización con comunidades,
+                            empresas y colegios.</p>
                     </div>
                     <div class="col-md-5">
                         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
@@ -166,7 +183,7 @@
                             <title>Cifras</title>
                             <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
                                 dy=".3em">500x500</text>
-                                <image  class="img-fluid " href="/img/cifras.jpg"  width="500px" height="350px" />
+                            <image class="img-fluid " href="/img/cifras.jpg" width="500px" height="350px" />
 
                         </svg>
 
@@ -184,10 +201,16 @@
 
         </main>
         <footer class=" text-black-50 text-center mt-5">
-            <%- include('../views/footer.ejs'); %>
+            <%- include('../views/layout/footer.ejs'); %>
         </footer>
 
         <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000
+        });
+    </script>
 
 
 </body>
