@@ -37,6 +37,10 @@ app.use(function(req,res,next){
 
 
 // Por donde va escuchar nuestro servidor
+// app.listen(3000, () => {
+//   console.log("SERVER UP running in http://localhost:3000")
+// })
+const port = process.env.PORT || 3000
 app.listen(port, () => {
-  console.log("SERVER UP running in http://localhost:3000")
+  console.log("Servidor a su servicio en el puerto", port)
 })
