@@ -14,4 +14,13 @@ conexion.connect((error) => {
   console.log("Conectado a la base de datos MYSQL")
 })
 
+
+conexion.on('error', err => {
+  if (err.code === 'PROTOCOL_CONNECTION_LOST') {
+      // db error reconnect
+      disconnect_handler();
+  } else {
+      throw err;
+  }
+});
 module.exports = conexion
