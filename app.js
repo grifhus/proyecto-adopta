@@ -37,6 +37,6 @@ app.use(function(req,res,next){
 
 
 // Por donde va escuchar nuestro servidor
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("SERVER UP running in http://localhost:3000")
 })
